@@ -9,7 +9,8 @@ const App = () => {
   // Masukkan Header dan Contact ke dalam div App
   return (
     <div className="App">
-      <Header />{
+      <Header />
+      {
         contacts.map((contact)=>{
           return <Contact data={contact}/>
         })
