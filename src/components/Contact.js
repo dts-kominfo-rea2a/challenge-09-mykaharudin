@@ -3,17 +3,14 @@
 import React from 'react';
 import '../App.css';
 
-const Contact = (prop) => {
+const Contact = ({data}) => {
     return (
-        <div className='item'>
-            <div className='aside'>
-                <img src={prop.data.photo} alt={prop.data.name} className='image'></img>
-            </div>
-            <div className='section'>
-                <div className='nama'>{prop.data.name}</div>
-                <div className='phone-email'>{prop.data.phone}<br></br>
-                {prop.data.email}
-                </div>
+        <div className='contact'>
+                <img alt={data.name} className='contact_image' src={data.photo}/>
+            <div className='contact_content'>
+                <h2 className='contact_titel'>{data.name}</h2>
+                <h5 className='contact_phone'>{data.phone}</h5>
+                <p className='contact_email'>{data.email}</p>
             </div>
         </div>
     )

@@ -5,9 +5,9 @@ import '../App.css';
 const Header = () => {
     return (
         <header>
-                <h2>
+                <h3>
                     Call a friend
-                </h2>
+                </h3>
                 <h4>
                     Your friend contact app
                 </h4>
