@@ -5,7 +5,6 @@ import '../App.css';
 
 const Contact = (prop) => {
     return (
-        <>
         <div className='item'>
             <div className='aside'>
                 <img src={prop.data.photo} alt={prop.data.name} className='image'></img>
@@ -17,7 +16,6 @@ const Contact = (prop) => {
                 </div>
             </div>
         </div>
-        </>
     )
 }
 
